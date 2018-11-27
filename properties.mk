@@ -138,6 +138,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.hwui.renderer=skiagl \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=0 \
     debug.sf.enable_hwc_vds=1 \
