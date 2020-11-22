@@ -139,7 +139,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
-    debug.sf.latch_unsignaled=1 \
+    debug.sf.latch_unsignaled=0 \
     debug.sf.enable_hwc_vds=1 \
     ro.opengles.version=196610 \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
