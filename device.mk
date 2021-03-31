@@ -122,6 +122,7 @@ PRODUCT_PACKAGES += \
     liba2dpoffload \
     libhdmiedid \
     libhfp \
+    libldacBT_dec \
     libsndmonitor
 
 PRODUCT_COPY_FILES += \
