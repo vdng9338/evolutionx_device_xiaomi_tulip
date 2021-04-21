@@ -120,6 +120,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     liba2dpoffload \
+    libbthost_if \
     libhdmiedid \
     libhfp \
     libldacBT_dec \
