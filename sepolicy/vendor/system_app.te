@@ -16,3 +16,6 @@ allow system_app sysfs_usb_fastcharge:file { open read getattr write };
 # KCAL
 allow system_app kcal_sysfs:dir search;
 allow system_app kcal_sysfs:file rw_file_perms;
+
+# ZRAM
+allow system_app sysfs_zram:file { open };
