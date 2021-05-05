@@ -33,6 +33,8 @@ PRODUCT_MODEL := Redmi Note 6 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR_PRODUCT_NAME := tulip
 
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
@@ -41,11 +43,3 @@ EVO_BUILD_TYPE := OFFICIAL
 EVO_MAINTAINER := arturo51236
 EVO_DONATE_URL := https://paypal.me/pokyrocky007
 EVO_SUPPORT_URL := https://t.me/EvolutionXRn6Pro
-
-# Build info
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="redfin-user 11 RQ2A.210505.003 7255357 release-keys"
-
-BUILD_FINGERPRINT := google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys
-
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
