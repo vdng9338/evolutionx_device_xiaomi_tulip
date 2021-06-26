@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit from tulip device
-$(call inherit-product, device/xiaomi/tulip/device.mk)
+$(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # Device info
 PRODUCT_NAME := evolution_tulip
