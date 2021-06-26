@@ -19,23 +19,33 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common EvolutionX stuff
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit from tulip device
-$(call inherit-product, $(LOCAL_PATH)/device.mk)
+$(call inherit-product, device/xiaomi/tulip/device.mk)
 
-PRODUCT_BRAND := Xiaomi
+# Device info
+PRODUCT_NAME := evolution_tulip
 PRODUCT_DEVICE := tulip
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosp_tulip
+PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 6 Pro
-
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
+PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR_PRODUCT_NAME := tulip
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# EvolutionX things
+EVO_BUILD_TYPE := OFFICIAL
+EVO_MAINTAINER := arturo51236
+EVO_DONATE_URL := https://paypal.me/pokyrocky007
+EVO_SUPPORT_URL := https://t.me/EvolutionXRn6Pro
+
+# Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="redfin-user 11 RQ2A.210505.003 7255357 release-keys"
 
 BUILD_FINGERPRINT := google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
